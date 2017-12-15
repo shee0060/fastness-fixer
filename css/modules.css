@@ -26,18 +26,10 @@ body {
   margin: 0;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
 footer,
 header,
 main,
-menu,
-nav,
-section,
-summary {
+nav {
   display: block;
 }
 
@@ -63,8 +55,7 @@ audio:not([controls]) {
 }
 
 a,
-button
-[tabindex] {
+button [tabindex] {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
@@ -146,6 +137,10 @@ svg.img-flex {
   overflow: hidden;
   position: relative;
   width: 100%;
+}
+
+.embed-3by2, .embed--3by2 {
+  padding-top: 66.6%; /* Classic 35 mm film & most digital photos, landscape */
 }
 
 .embed-2by3, .embed--2by3 {
@@ -310,72 +305,6 @@ svg.img-flex {
 .pin-lt {
   top: 0;
   left: 0;
-}
-
-.pin-top-right,
-.pin-right-top,
-.pin-tr,
-.pin-rt {
-  top: 0;
-  right: 0;
-}
-
-.pin-bottom-left,
-.pin-left-bottom,
-.pin-bl,
-.pin-lb {
-  bottom: 0;
-  left: 0;
-}
-
-.pin-bottom-right,
-.pin-right-bottom,
-.pin-br,
-.pin-rb {
-  bottom: 0;
-  right: 0;
-}
-
-.pin-top-center,
-.pin-center-top,
-.pin-tc,
-.pin-ct {
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-}
-
-.pin-bottom-center,
-.pin-center-bottom,
-.pin-bc,
-.pin-cb {
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.pin-center-left,
-.pin-left-center,
-.pin-cl,
-.pin-lc {
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.pin-center-right,
-.pin-right-center,
-.pin-cr,
-.pin-rc {
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.pin-center, .pin-c {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .width-quarter, .w-1-4 {
